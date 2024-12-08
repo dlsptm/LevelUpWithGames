@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0A0526FF;
+    color: white;
+    font-family: 'Verdana', sans-serif;
+}
+
+aside {
+    position: absolute;
+    background: #0A0526FF;
+    z-index: 2;
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+h1 {
+    font-size: 8rem;
+    text-shadow: 0px 0px 80px #1500ff;
+    text-align: center;
+    -webkit-text-stroke: 3px rgb(255, 255, 255);
+}
+
+.paper-name {
+    color: rgb(222, 111, 193);
+}
+
+.rock-name {
+    color: rgb(137, 211, 236);
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.scissors-name {
+    color: #f6c25a;
+}
+
+
+aside form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px
+}
+
+aside .config-fo {
+    display: flex;
+    gap: 20px;
+}
+
+input, label, button, select {
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+aside button {
+    box-shadow: 0px 0px 27px 15px #290980;
+    border-radius: 10px;
+    padding: 15px 30px;
+    background: transparent ;
+    color: white;
+    font-size: 1.5rem;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+aside button:hover {
+    background: white;
+    color: black;
+}
+
+main {
+    background: #0A0526FF;
+    position: relative;
+    z-index: 0;
+}
+
+.config {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.config p {
+    font-size: 1.3rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    margin-top: 6rem;
+}
+
+.cards {
+    width: 9rem;
+    height: 9rem;
+    cursor: pointer;
+    border: 5px solid black;
+    outline: 5px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+
+.cards:hover {
+    transform: translateY(-10px);
+}
+
+.cards img {
+    width: 100%;
+}
+
+.paper {
+    background: rgb(222, 111, 193);
+}
+
+.rock {
+    background: rgb(137, 211, 236);
+}
+
+.cisors {
+    background: #f6c25a;
+}
+
+span {
+    color: #E5CC99;
+    font-weight: bold;
+}
+
+.winner{
+    background: #7aea89;
+    outline: 8px solid #7aea89;
+    border: 7px solid black;
+}
+
+.looser{
+    background: #d76161;
+    outline: 8px solid #d76161;
+    border: 7px solid black;
+}
+
+.tie{
+    background: #f0e53d;
+    outline: 8px solid #f0e53d;
+    border: 7px solid black;
+}
+
+.final-bg-tie{
+    background: linear-gradient(0deg, rgba(10,5,38,1) 76%, rgb(208, 195, 10) 100%);
+}
+
+.final-bg-winner{
+    background: linear-gradient(0deg, rgba(10,5,38,1) 76%, rgb(62, 232, 85) 100%);
+}
+
+.final-bg-looser{
+    background: linear-gradient(0deg, rgba(10,5,38,1) 76%, rgb(189, 27, 27) 100%);
+}
